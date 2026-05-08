@@ -32,31 +32,6 @@ This project demonstrates practical blue-team skills, including:
 - Distinguishing scanning/probing from confirmed exploitation
 - Writing clear remediation recommendations
 
-## Repository Structure
-
-```text
-honeypot-siem-lab/
-│
-├── README.md
-│
-├── reports/
-│   └── 001-tpot-initial-analysis.md
-│
-├── screenshots/
-│   └── 001-tpot-initial-analysis/
-│       ├── kibana-discover-overview.png
-│       ├── top-source-ips.png
-│       ├── top-targeted-ports.png
-│       ├── top-source-countries.png
-│       ├── suricata-alert-signatures-overview.png
-│       ├── smbv1-major-signature-id.png
-│       ├── telnet-app-proto.png
-│       ├── http-alert-signatures.png
-│       └── http-method.png
-│
-└── queries/
-    └── 001-tpot-initial-analysis-kql.md
-```
 
 ## Reports
 
