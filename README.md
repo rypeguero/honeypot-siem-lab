@@ -30,23 +30,28 @@ This project demonstrates practical blue-team skills, including:
 - Service and port exposure analysis
 - Evidence-based SOC reporting
 - Distinguishing scanning/probing from confirmed exploitation
+- Reviewing credential-guessing activity
+- Identifying post-login reconnaissance commands
 - Writing clear remediation recommendations
-
 
 ## Reports
 
 | Report | Description |
 |---|---|
 | [001 - T-Pot Initial Analysis](reports/001-tpot-initial-analysis.md) | Initial review of external scanning and probing activity observed against the honeypot using Kibana, Elastic, and Suricata. |
+| [002 - T-Pot 24-Hour Analysis](reports/002-tpot-24hr-analysis.md) | 24-hour review of Honeytrap and Cowrie activity, including broad port scanning, SSH credential guessing, and post-login reconnaissance commands. |
 
 ## Current Findings
 
-The first report focuses on several types of external activity observed against the honeypot:
+The current reports focus on several types of external activity observed against the honeypot:
 
 - SMBv1-related probing on TCP/445
 - Telnet probing on TCP/23
 - HTTP probing and header anomalies on TCP/80
 - Broad scanning activity across exposed services
+- Honeytrap-based port scanning and service discovery
+- Cowrie SSH credential-guessing activity
+- Captured post-login reconnaissance commands
 - Source IP and country distribution analysis
 - Suricata alert review and interpretation
 
