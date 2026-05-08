@@ -18,7 +18,7 @@ This report documents external scanning and probing activity observed against a 
 
 ### Kibana Overview
 
-![Kibana Discover Overview]()
+![Kibana Discover Overview](https://github.com/rypeguero/honeypot-siem-lab/blob/78102550237f09768520739a7e153e5930417e06/screenshots/001-tpot-initial-analysis/kibana-discover-overview.png)
 
 ---
 
@@ -40,11 +40,11 @@ The honeypot received traffic across several exposed services, including Telnet,
 
 ### Top External Source IPs
 
-![Top Source IPs](screenshots/001-initial-analysis/top-source-ips.png)
+![Top Source IPs](https://github.com/rypeguero/honeypot-siem-lab/blob/78102550237f09768520739a7e153e5930417e06/screenshots/001-tpot-initial-analysis/top-source-ips.png)
 
 ### Top Targeted Ports
 
-![Top Targeted Ports](screenshots/001-initial-analysis/top-targeted-ports.png)
+![Top Targeted Ports](https://github.com/rypeguero/honeypot-siem-lab/blob/78102550237f09768520739a7e153e5930417e06/screenshots/001-tpot-initial-analysis/top-targeted-ports.png)
 
 | Port | Service / Meaning |
 |---:|---|
@@ -60,7 +60,7 @@ The honeypot received traffic across several exposed services, including Telnet,
 
 ### Top Source Countries
 
-![Top Source Countries](screenshots/001-initial-analysis/top-source-countries.png)
+![Top Source Countries](https://github.com/rypeguero/honeypot-siem-lab/blob/78102550237f09768520739a7e153e5930417e06/screenshots/001-tpot-initial-analysis/top-source-countries.png)
 
 | Country | Share |
 |---|---:|
@@ -78,7 +78,7 @@ These countries represent geolocated source infrastructure, not confirmed attack
 
 ## Suricata Alert Overview
 
-![Suricata Alert Signatures Overview](screenshots/001-initial-analysis/suricata-alert-signatures-overview.png)
+![Suricata Alert Signatures Overview](https://github.com/rypeguero/honeypot-siem-lab/blob/78102550237f09768520739a7e153e5930417e06/screenshots/001-tpot-initial-analysis/suricata-alert-signatures-overview.png)
 
 The Suricata alert overview showed a high volume of packet, stream, and protocol-related alerts. Most alerts were informational or related to traffic interpretation, but some alerts provided stronger investigation leads, especially the SMBv1-related activity on TCP/445.
 
@@ -94,7 +94,7 @@ The strongest finding involved Suricata alerts for potentially unsafe Server Mes
 src_ip: * and not src_ip: "<VPS_PUBLIC_IP>" and not DestPort: 64297 and alert.metadata.signature_severity: "Major"
 ```
 
-![SMBv1 Major Alert Signature ID](screenshots/001-initial-analysis/smbv1-major-signature-id.png)
+![SMBv1 Major Alert Signature ID](https://github.com/rypeguero/honeypot-siem-lab/blob/78102550237f09768520739a7e153e5930417e06/screenshots/001-tpot-initial-analysis/smbv1-major-signature-id.png)
 
 | Field | Value |
 |---|---|
@@ -125,7 +125,7 @@ The honeypot received high-volume traffic on TCP/23, commonly associated with Te
 src_ip: * and not src_ip: "<VPS_PUBLIC_IP>" and not DestPort: 64297 and DestPort: 23
 ```
 
-![Telnet Application Protocol Evidence](screenshots/001-initial-analysis/telnet-app-proto.png)
+![Telnet Application Protocol Evidence](https://github.com/rypeguero/honeypot-siem-lab/blob/78102550237f09768520739a7e153e5930417e06/screenshots/001-tpot-initial-analysis/telnet-app-proto.png)
 
 | Field | Value |
 |---|---|
