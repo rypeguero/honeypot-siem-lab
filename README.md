@@ -40,7 +40,7 @@ This project demonstrates practical blue-team skills, including:
 |---|---|
 | [001 - T-Pot Initial Analysis](reports/001-tpot-initial-analysis.md) | Initial review of external scanning and probing activity observed against the honeypot using Kibana, Elastic, and Suricata. |
 | [002 - T-Pot 24-Hour Analysis](reports/002-tpot-24hr-analysis.md) | 24-hour review of Honeytrap and Cowrie activity, including broad port scanning, SSH credential guessing, and post-login reconnaissance commands. |
-
+| [003 - T-Pot Multi-Day SIP/VoIP Analysis](reports/003-tpot-multiday-sip-analysis.md) | Multi-day review showing SentryPeer/SIP activity dominance, SIP port 5060 probing, INVITE/REGISTER activity, VoIP user-agent patterns, and possible toll-fraud reconnaissance indicators. |
 ## Current Findings
 
 The current reports focus on several types of external activity observed against the honeypot:
@@ -54,6 +54,10 @@ The current reports focus on several types of external activity observed against
 - Captured post-login reconnaissance commands
 - Source IP and country distribution analysis
 - Suricata alert review and interpretation
+- Multi-day SentryPeer/SIP activity dominance
+- SIP/VoIP probing targeting port 5060
+- INVITE and REGISTER traffic suggesting possible VoIP/toll-fraud reconnaissance
+- SIP user-agent patterns tied to VoIP clients and scanner-like tools
 
 The findings are based on observed honeypot telemetry and should be interpreted as source infrastructure activity, not confirmed attacker attribution.
 
